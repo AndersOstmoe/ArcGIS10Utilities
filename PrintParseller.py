@@ -134,7 +134,7 @@ def skrivuttema(Tema):
     del mxd
 
 
-#skrivuttema("Oversikt")
+# skrivuttema("Oversikt")
 
 skrivuttema("Anbefalte linjer og eksempellinjer")
 
@@ -144,5 +144,5 @@ skrivuttema("Anbefalte linjer og eksempellinjer")
 #skrivuttema("Mineralressurser")
 #skrivuttema("Dyrket mark")
 #skrivuttema("Vannressurs")
-# skrivuttema("Løsmasser")
-# skrivuttema("Innspill")
+#skrivuttema("Løsmasser")
+#skrivuttema("Innspill")

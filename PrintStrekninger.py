@@ -45,7 +45,7 @@ def skrivuttema(Tema):
 
         # Plasserer verdiforklaring utenfor
         if (elm.name == "VerdiForklaring") and ((Tema == "Vannmiljø sårbarhet") or (Tema == "Kulturmiljø") or (Tema == "Friuftsliv, by og bygdeliv") or
-            (Tema == "Innspill") or (Tema == "Løsmasser")):
+            (Tema == "Innspill") or (Tema == "Løsmasser") or (Tema == "Linjer og kryss")):
             print "Plasserer utenfor " + elm.name
             elm.elementPositionY = PlassertUtenforY
 
@@ -54,7 +54,7 @@ def skrivuttema(Tema):
         if elm.name == "Verdi":
             print elm.name
             PositionX = elm.elementPositionX
-            if (Tema == "Vannmiljø sårbarhet") or (Tema == "Innspill") or (Tema == "Løsmasser"):
+            if (Tema == "Vannmiljø sårbarhet") or (Tema == "Innspill") or (Tema == "Løsmasser") or (Tema == "Linjer og kryss"):
                 elm.elementPositionY = PlassertUtenforY
 
     # Setter tiktig tittel på kartet
@@ -117,17 +117,19 @@ def skrivuttema(Tema):
     del mxd
 
 
-skrivuttema("Landskapsbilde")
-skrivuttema("Vilttrekk")
-skrivuttema("Naturmangfold")
-skrivuttema("Økologiske funksjonsområder")
-skrivuttema("Fisk og ferskvannsorganismer")
-skrivuttema("Friuftsliv, by og bygdeliv")
-skrivuttema("Mineralressurser")
-skrivuttema("Dyrket mark")
-skrivuttema("Vannressurs")
-skrivuttema("Vannmiljø sårbarhet")
-skrivuttema("Kulturmiljø")
+# skrivuttema("Landskapsbilde")
+# skrivuttema("Vilttrekk")
+# skrivuttema("Naturmangfold")
+# skrivuttema("Økologiske funksjonsområder")
+# skrivuttema("Fisk og ferskvannsorganismer")
+# skrivuttema("Friuftsliv, by og bygdeliv")
+# skrivuttema("Mineralressurser")
+# skrivuttema("Dyrket mark")
+# skrivuttema("Vannressurs")
+# skrivuttema("Vannmiljø sårbarhet")
+# skrivuttema("Kulturmiljø")
+#
+# skrivuttema("Innspill")
+# skrivuttema("Løsmasser")
 
-skrivuttema("Innspill")
-skrivuttema("Løsmasser")
+skrivuttema("Linjer og kryss")
