@@ -27,9 +27,10 @@ def skrivuttema(Tema):
             print "Plasserer " + elm.name
             elm.elementPositionY = TegnforklaringY
         if (Tema == "Kulturmiljø"):
-            if (elm.name == "KulturForklaring"):
-                print "Plasserer " + elm.name
-                elm.elementPositionY = TegnforklaringY
+            # Denne skal ikke med likevel
+            # if (elm.name == "KulturForklaring"):
+            #    print "Plasserer " + elm.name
+            #    elm.elementPositionY = TegnforklaringY
             if (elm.name == "KulturminnerForklaring"):
                 print "Plasserer " + elm.name
                 elm.elementPositionY = 1.7992
@@ -44,7 +45,7 @@ def skrivuttema(Tema):
             elm.elementPositionY = 1.7992
 
         # Plasserer verdiforklaring utenfor
-        if (elm.name == "VerdiForklaring") and ((Tema == "Vannmiljø sårbarhet") or (Tema == "Kulturmiljø") or (Tema == "Friuftsliv, by og bygdeliv") or
+        if (elm.name == "VerdiForklaring") and ((Tema == "Vannmiljø sårbarhet") or (Tema == "Friuftsliv, by og bygdeliv") or
             (Tema == "Innspill") or (Tema == "Løsmasser") or (Tema == "Linjer og kryss")):
             print "Plasserer utenfor " + elm.name
             elm.elementPositionY = PlassertUtenforY
@@ -78,6 +79,8 @@ def skrivuttema(Tema):
             lyr.visible = True
         if (lyr.name == "Fisk_ferskvann_Dissolve") and (Tema == "Fisk og ferskvannsorganismer"):
             lyr.visible = True
+        if (lyr.name == "N50_Arealdekke_omrade vannflate") and (Tema == "Fisk og ferskvannsorganismer"):
+            lyr.visible = False
         if (lyr.name == "Vilttrekk O") and (Tema == "Vilttrekk"):
             lyr.visible = True
         if (lyr.name == "KUfase LandskapsbildeRgistreringer") and (Tema == "Landskapsbilde"):
@@ -100,6 +103,8 @@ def skrivuttema(Tema):
             lyr.visible = True
         if (lyr.name == "Kulturminner - Lokalitetsikoner") and (Tema == "Kulturmiljø"):
             lyr.visible = True
+        if (lyr.name == "Kulturminner - Lokaliteter") and (Tema == "Kulturmiljø"):
+            lyr.visible = True
         if (lyr.name == "TilbakemeldingerEksternt") and (Tema == "Innspill"):
             lyr.visible = True
         if (lyr.name == "TilbakemeldingerEksterntRedigert") and (Tema == "Innspill"):
@@ -121,7 +126,7 @@ def skrivuttema(Tema):
 # skrivuttema("Vilttrekk")
 # skrivuttema("Naturmangfold")
 # skrivuttema("Økologiske funksjonsområder")
-# skrivuttema("Fisk og ferskvannsorganismer")
+skrivuttema("Fisk og ferskvannsorganismer")
 # skrivuttema("Friuftsliv, by og bygdeliv")
 # skrivuttema("Mineralressurser")
 # skrivuttema("Dyrket mark")
@@ -132,4 +137,4 @@ def skrivuttema(Tema):
 # skrivuttema("Innspill")
 # skrivuttema("Løsmasser")
 
-skrivuttema("Linjer og kryss")
+# skrivuttema("Linjer og kryss")
